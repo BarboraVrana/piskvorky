@@ -9,36 +9,38 @@ body {
   color: #ffffff;
   text-align: center;
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: 100vh 100vw;
+  min-height: 100vh;
   padding-top: 80px;
 }
 
 .main {
   width: 350px;
   margin: auto;
+  background-color: #283e50;
+  border-radius: 10px 10px 0 0;
 }
 
-.Piskvorky {
-  background-color: #283e50;
+.piskvorky {
   padding: 15px;
 }
 
-.Pravidla {
+.pravidla {
   background-color: #1fcca4;
   height: 45px;
   padding: 15px;
+  margin-bottom: 1px;
 }
-.Zacit {
+.zacit {
   background-color: #0197f6;
   height: 45px;
   padding: 15px;
 }
 
-.Pravidla:hover {
+.pravidla:hover {
   background-color: #1cbb96;
 }
 
-.Zacit:hover {
+.zacit:hover {
   background-color: #0090e9;
 }
 
@@ -51,6 +53,7 @@ h1 {
 a {
   color: #ffffff;
   text-decoration: none;
+  display: block;
 }
 
 p {
@@ -60,4 +63,5 @@ p {
 img {
   display: block;
   border-radius: 10px 10px 0 0;
+  width: 350px;
 }
