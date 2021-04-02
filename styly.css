@@ -68,7 +68,7 @@ img {
   width: 100%;
 }
 
-.obrazek img {
+.uvodni_obrazek {
   border-radius: 10px 10px 0 0;
 }
 
@@ -86,15 +86,22 @@ li {
   padding-bottom: 15px;
 }
 
+.rules {
+  width: 350px;
+  margin: auto;
+  background-color: #283e50;
+  border-radius: 10px 10px 0 0;
+}
+
 .situace {
   display: block;
   padding: 15, 15, 0, 15;
 }
 
-figure {
+.instruction {
   margin: 0px 30px 40px 30px;
 }
-figcaption p {
+.text__instruction p {
   font-style: italic;
   line-height: 1.3em;
 }
@@ -110,7 +117,7 @@ figcaption p {
 }
 
 @media (min-width: 640px) {
-  .main {
+  .rules {
     width: 640px;
   }
   .kontejner {
@@ -118,7 +125,7 @@ figcaption p {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  figure {
+  .instruction {
     width: 45%;
     margin: 0px 0px 20px 0px;
   }
