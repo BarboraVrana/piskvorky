@@ -24,7 +24,7 @@ body {
   padding: 15px;
 }
 
-.pravidla {
+.pravidla,.uvod {
   background-color: #1fcca4;
   height: 45px;
   padding: 15px;
@@ -37,6 +37,10 @@ body {
 }
 
 .pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.uvod:hover {
   background-color: #1cbb96;
 }
 
@@ -61,7 +65,60 @@ p {
 }
 
 img {
-  display: block;
-  border-radius: 10px 10px 0 0;
-  width: 350px;
+  width: 100%;
 }
+
+.obrazek img {
+  border-radius: 10px 10px 0 0;
+}
+
+.pravidla_cela {
+  padding-top: 20px;
+}
+
+.pravidla_text {
+  text-align: left;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+.situace {
+  display: block;
+  padding: 15, 15, 0, 15;
+}
+
+figure {
+  margin: 0px 30px 40px 30px;
+}
+figcaption p {
+  font-style: italic;
+  line-height: 1.3em;
+}
+.kolecko img {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+.krizek img {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+@media (min-width: 640px) {
+  .main {
+    width: 640px;
+  }
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  figure {
+    width: 45%;
+    margin: 0px 0px 20px 0px;
+  }
