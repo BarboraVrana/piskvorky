@@ -116,16 +116,17 @@ li {
   filter: invert(100%);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .rules {
     width: 640px;
   }
   .kontejner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 20px;
   }
   .instruction {
-    width: 45%;
-    margin: 0px 0px 20px 0px;
+    flex-basis: calc((100% - 20px) / 2);
+    margin: 0px;
   }
