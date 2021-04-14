@@ -40,17 +40,19 @@ body {
   background-color: #1cbb96;
 }
 
-.uvod:hover {
+.uvod:hover,
+.domu:hover {
   background-color: #1cbb96;
 }
 
-.zacit:hover {
+.zacit:hover,
+.znovu_hrej:hover {
   background-color: #0090e9;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
-  font-size: 40px;
+  font-size: 60px;
   margin-top: 10px;
 }
 
@@ -109,11 +111,73 @@ li {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+
 }
 .krizek img {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+}
+/* stylování stránky hra*/
+
+.hra {
+
+  max-width: 80vmin;
+  margin: auto;
+}
+
+.domu, .znovu_hrej {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.domu {
+  background-color: #1fcca4;
+  padding: 7px;
+  margin-right: 6px;
+}
+
+.znovu_hrej {
+ background-color: #0197f6;
+ padding: 7px;
+}
+
+
+.zahlavi {
+  display: flex;
+  align-items: center;
+}
+
+.hraje {
+  flex-grow: 1;
+  text-align: start;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mrizka {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-around;
+
+
+}
+.mrizka button {
+ flex-basis: 10%;
+ aspect-ratio: 1 / 1;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.2);
+
+
+}
+
+.mrizka button:hover,
+.mrizka button:hover,
+.mrizka button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
 }
 
 @media (min-width: 700px) {
