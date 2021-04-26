@@ -1,9 +1,14 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*,
-:after,
-:before {
+
+html {
   box-sizing: border-box;
 }
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -24,7 +29,8 @@ body {
   padding: 15px;
 }
 
-.pravidla,.uvod {
+.pravidla,
+.uvod {
   background-color: #1fcca4;
   height: 45px;
   padding: 15px;
@@ -121,7 +127,6 @@ li {
   width: 1em;
   height: 1em;
   filter: invert(100%);
-
 }
 .krizek img {
   width: 1em;
@@ -131,13 +136,14 @@ li {
 /* stylování stránky hra*/
 
 .hra {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   max-width: 80vmin;
   margin: auto;
 }
 
-.domu, .znovu_hrej {
+.domu,
+.znovu_hrej {
   width: 40px;
   height: 40px;
   border-radius: 5px;
@@ -150,8 +156,8 @@ flex-direction: column;
 }
 
 .znovu_hrej {
- background-color: #0197f6;
- padding: 7px;
+  background-color: #0197f6;
+  padding: 7px;
 }
 
 .zahlavi {
@@ -176,15 +182,12 @@ flex-direction: column;
   min-width: 150px;
   margin-top: 20px;
   box-shadow: 2px 2px 10px 1px rgb(0 0 0 / 40%);
-
-
 }
 .mrizka button {
-  flex-basis: 10%;
-  aspect-ratio: 1 / 1;
+  width: 8vmin;
+  height: 8vmin;
   border: 1px solid black;
   background-color: #bcb0d6;
-
 }
 
 .mrizka button:hover,
@@ -208,3 +211,18 @@ flex-direction: column;
     flex-basis: calc((100% - 20px) / 2);
     margin: 0px;
   }
+}
+
+.board__field--circle {
+  background-image: url(obrazkypravidla/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.board__field--cross {
+  background-image: url(obrazkypravidla/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
